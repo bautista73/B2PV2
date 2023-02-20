@@ -1,1 +1,154 @@
-/*# sourceMappingURL=index.css.map */
+@import url(/styles/arrow.css);
+@font-face {
+  font-family: "Texgyreheros";
+  src: url(/Font-TeX/texgyreheros-regular.otf);
+}
+@font-face {
+  font-family: "Texgyreheros";
+  font-weight: bold;
+  src: url(/Font-TeX/texgyreheros-bold.otf);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Texgyreheros", sans-serif;
+  background-color: #1a1a1a;
+  color: #e8e8e8;
+}
+
+#Navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  font-size: 18px;
+  background-color: darkblue;
+}
+#Navigation .nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Navigation .nav-wrapper .circle-btn {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+  left: 50%;
+  margin-left: -40px;
+}
+#Navigation .nav-wrapper .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  color: #fe7f2d;
+  text-align: center;
+  line-height: 80px;
+  transition: color 0.2s ease-in;
+}
+#Navigation .nav-wrapper .circle-btn.effect-2 .icon {
+  display: block;
+  position: relative;
+  transition: all 0.4s 0.1s;
+  transform-origin: 50% 0%;
+  transform-style: preserve-3d;
+}
+#Navigation .nav-wrapper .circle-btn.effect-2 .icon::after {
+  content: "\f176";
+  font-family: FontAwesome;
+  color: #fcca46;
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  transform-origin: 50% 0;
+  transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+}
+#Navigation .nav-wrapper .circle-btn.effect-2:hover .icon {
+  transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+}
+#Navigation .nav-wrapper .circle-btn:hover .icon {
+  color: #fcca46;
+}
+#Navigation .nav-wrapper .circle-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#Navigation .nav-wrapper .left-nav {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+#Navigation .nav-wrapper .left-nav .scroll-arrow {
+  width: 26px;
+  margin-right: 1px;
+  cursor: pointer;
+}
+#Navigation .nav-wrapper .left-nav .bubble-wrapper {
+  border: 2px solid #e8e8e8;
+  border-radius: 110px;
+  padding: 2px;
+}
+#Navigation .nav-wrapper .left-nav .left-one {
+  width: 40%;
+}
+#Navigation .nav-wrapper .left-nav .nav-bubble {
+  border-radius: 110px;
+  border: 2px solid #e8e8e8;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Navigation .nav-wrapper .left-nav .nav-bubble .nav-home-button {
+  background: none;
+  border: none;
+}
+#Navigation .nav-wrapper .left-nav .nav-bubble .nav-home-button .lni {
+  border: 2px solid #e8e8e8;
+  border-radius: 50%;
+  font-size: 20px;
+}
+#Navigation .nav-wrapper .left-nav .left-two {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+#Navigation .nav-wrapper .left-nav .left-two .nav-portfolio, #Navigation .nav-wrapper .left-nav .left-two .nav-about, #Navigation .nav-wrapper .left-nav .left-two .nav-contact {
+  width: 100%;
+}
+#Navigation .nav-wrapper .right-nav ul {
+  display: flex;
+  list-style: none;
+}
+#Navigation .nav-wrapper .right-nav ul li {
+  padding: 0 0.5rem;
+}
+#Navigation .nav-wrapper .right-nav ul li .lni {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #e8e8e8;
+}/*# sourceMappingURL=index.css.map */
