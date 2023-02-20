@@ -26,7 +26,7 @@ body {
   left: 0;
   height: 4rem;
   width: 100%;
-  padding: 1rem;
+  padding: 25px;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -42,11 +42,6 @@ body {
   align-items: center;
   width: 70%;
   gap: 1rem;
-}
-#Navigation .nav-wrapper .left-nav .scroll-arrow {
-  width: 26px;
-  margin-right: 1px;
-  cursor: pointer;
 }
 #Navigation .nav-wrapper .left-nav .bubble-wrapper {
   border: 2px solid #e8e8e8;
@@ -82,8 +77,14 @@ body {
   gap: 0.5rem;
 }
 #Navigation .nav-wrapper .right-nav ul li .lni {
-  font-size: 22px;
+  font-size: 25px;
   padding: 10px;
   border-radius: 50%;
   border: 2px solid #e8e8e8;
+  background-color: #1a1a1a;
+  transition: all 0.25s ease-in-out;
+}
+#Navigation .nav-wrapper .right-nav ul li .lni:hover {
+  color: #1a1a1a;
+  background-color: #e8e8e8;
 }/*# sourceMappingURL=index.css.map */

@@ -11,20 +11,6 @@
   transition: background-color 0.4s ease, fill 0.4s linear;
   margin-right: 1px;
 }
-.arrow:last-child {
-  margin-right: 0;
-}
-.arrow:hover {
-  background-color: #1a1a1a;
-}
-.arrow:hover i {
-  animation-duration: 0.4s;
-  animation-timing-function: ease-in;
-  color: #e8e8e8;
-}
-.arrow.right:hover i {
-  animation-name: moveRight;
-}
 .arrow.angle {
   transform: rotate(-45deg);
 }
@@ -65,4 +51,20 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+.nav-hover {
+  cursor: pointer;
+}
+.nav-hover:hover {
+  background-color: #e8e8e8 !important;
+  color: #1a1a1a;
+}
+.nav-hover:hover .arrow {
+  background-color: #1a1a1a;
+}
+.nav-hover:hover .arrow i {
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in;
+  color: #e8e8e8;
+  animation-name: moveRight;
 }/*# sourceMappingURL=arrow.css.map */
