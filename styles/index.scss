@@ -12,15 +12,9 @@
 
 $base-dark: #1a1a1a;
 $base-light: #e8e8e8;
-$base-gray: #626060;
+$base-gray: #2b2b2b;
 $accent-heather: #858377;
 $accent-linen: #E1DACF;
-
-$size: 80px;
-$border: 2px; 
-$bg: #233d4d;
-$static: #fe7f2d;
-$active: #fcca46;
 
 $border: 2px solid $base-light;
 
@@ -42,90 +36,22 @@ body {
     left: 0;
     height: 4rem;
     width: 100%;
+    padding: 1rem;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     font-size: 18px;
-    background-color: darkblue;
 
     .nav-wrapper {
         display: flex;
         align-items: center;
-        justify-content: space-between; //temp
-
-        .circle-btn {
-            cursor: pointer;
-            display: block;
-            position: relative;
-            width: $size;
-            height: $size;
-            line-height: $size;
-            overflow: hidden;
-            left: 50%;
-            margin-left: -($size/2);
-          }
-          
-          .icon {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 2;
-            font-size: 30px;
-            width: 100%;
-            height: 100%;
-            color: $static;
-            text-align: center;
-            line-height: $size;
-            transition: color .2s ease-in;
-          }
-          
-          .circle-btn.effect-2 {
-            .icon {
-              display: block;
-              position: relative;
-              transition: all .4s .1s;
-              transform-origin: 50% 0%;
-              transform-style: preserve-3d;
-          
-              
-            &::after {
-              content: '\f176';
-              font-family: FontAwesome;
-              color: $active;
-              display: block;
-              position: absolute;
-              left: 0;
-              height: 100%;
-              width: 100%;
-              top: 0;
-              transform-origin: 50% 0;
-              transform: translate3d(0px,105%,0px) rotateX(-90deg);
-              }
-            }
-          }
-          
-          .circle-btn.effect-2:hover .icon {
-            transform: translate3d(0px,0px,-30px) rotateX(90deg);
-          }
-          
-          .circle-btn:hover .icon {
-            color: $active;
-          }
-          
-          .circle-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-          }
+        justify-content: space-between; 
 
         .left-nav {
             display: flex;
             align-items: center;
             width: 70%;
+            gap: 1rem;
 
             .scroll-arrow {
                 width: 26px;
@@ -133,12 +59,10 @@ body {
                 cursor: pointer;
             }
 
-
-
             .bubble-wrapper {
                 border: $border;
                 border-radius: 110px;
-                padding: 2px;
+                padding: 3px;
             }
 
             .left-one {
@@ -148,21 +72,13 @@ body {
             .nav-bubble {
                 border-radius: 110px;
                 border: $border;
-                padding: 2px;
+                padding: 3px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                .nav-home-button {
-     
-                    background: none;
-                    border: none;
-                    .lni {
-                        border: $border;
-                        border-radius: 50%;
-                        font-size: 20px;  
-                    }
+                .nav-title {
+                    padding: 0.5rem 0.5rem 0.6rem 0.5rem;
                 }
-                
             }
 
             .left-two {
@@ -171,6 +87,7 @@ body {
                 align-items: center;
                 .nav-portfolio, .nav-about, .nav-contact {
                     width: 100%;
+                    background-color: $base-gray;
                 }
             }
         }
@@ -178,10 +95,11 @@ body {
             ul {
                 display: flex;
                 list-style: none;
+                gap: 0.5rem;
                 li {
-                    padding: 0 0.5rem;
+                    
                     .lni {
-                        font-size: 20px;
+                        font-size: 22px;
                         padding: 10px;
                         border-radius: 50%;
                         border: $border

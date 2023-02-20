@@ -1,106 +1,68 @@
-.wrapper {
-  transform: rotate(90deg);
-}
-
-.circle-btn {
+.arrow {
   cursor: pointer;
-  display: block;
-  position: relative;
-  width: 10px;
-  height: 10px;
-  line-height: 10px;
-  overflow: hidden;
-  left: 50%;
-  margin-left: 5px;
-}
-
-.icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  font-size: 30px;
-  width: 100%;
-  height: 100%;
-  color: #fe7f2d;
-  text-align: center;
-  line-height: 10px;
-  transition: color 0.2s ease-in;
-}
-
-.circle-btn.effect-2 .icon {
-  display: block;
-  position: relative;
-  transition: all 0.4s 0.1s;
-  transform-origin: 50% 0%;
-  transform-style: preserve-3d;
-}
-.circle-btn.effect-2 .icon::after {
-  content: "&#xf062";
-  font-family: la-arrow-up;
-  color: #fcca46;
-  display: block;
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  transform-origin: 50% 0;
-  transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
-}
-
-.circle-btn.effect-2:hover .icon {
-  transform: translate3d(0px, 0px, -30px) rotateX(90deg);
-}
-
-.circle-btn:hover .icon {
-  color: #fcca46;
-}
-
-.circle-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.circle-btn.btn-1 .circle-bg {
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  transition: background 0.5s linear;
-  border: 2px solid #fe7f2d;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: background-color 0.4s ease, fill 0.4s linear;
+  margin-right: 1px;
 }
-.circle-btn.btn-1:hover .circle-bg {
-  border-color: transparent;
-  background: transparent;
-  animation: circleround cubic-bezier(0.17, 0.13, 0.28, 1) 1s;
-  animation-fill-mode: forwards;
-  border-right-color: #fcca46;
-  border-bottom-color: #fcca46;
+.arrow:last-child {
+  margin-right: 0;
+}
+.arrow:hover {
+  background-color: #1a1a1a;
+}
+.arrow:hover i {
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in;
+  color: #e8e8e8;
+}
+.arrow.right:hover i {
+  animation-name: moveRight;
+}
+.arrow.angle {
+  transform: rotate(-45deg);
+}
+.arrow.color {
+  background-color: #0582ca;
+}
+.arrow.color i {
+  color: #e8e8e8;
+}
+.arrow.color-2 {
+  background-color: #ffc300;
+}
+.arrow.color-2:hover i {
+  color: #1a1a1a;
+}
+.arrow.color-3 {
+  background-color: #4c956c;
+}
+.arrow.color-3 i {
+  color: #e8e8e8;
+}
+.arrow i {
+  font-size: 26px;
+  width: 1em;
+  height: 1em;
+  color: #1a1a1a;
 }
 
-@keyframes circleround {
-  0% {
-    transform: rotate(-90deg);
-    opacity: 1;
-  }
+@keyframes moveRight {
   50% {
-    opacity: 1;
+    transform: translateX(100px);
   }
-  100% {
-    transform: rotate(360deg);
+  51% {
     opacity: 0;
-  }
-}
-@keyframes arrowmove {
-  0% {
-    top: 2px;
+    transform: translateX(-100px);
   }
   100% {
-    top: -3px;
+    opacity: 1;
+    transform: translateX(0);
   }
 }/*# sourceMappingURL=arrow.css.map */
