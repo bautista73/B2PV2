@@ -1,8 +1,11 @@
-$base-dark: #1a1a1a;
-$base-light: #e8e8e8;
-$base-gray: #2b2b2b;
-$accent-heather: #858377;
-$accent-linen: #E1DACF;
+$base-dark: #0f0f0f;
+$base-light: #f3f3f3;
+$base-gray: #393939;
+$base-light-gray: #898989;
+
+$accent-green: #96a064;
+$accent-blue: #77a6b6;
+$accent-yellow: #d1b15f;
 
 $border: 2px solid $base-light;
 
@@ -16,35 +19,27 @@ $border: 2px solid $base-light;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-	transition: background-color 0.4s ease, fill 0.4s linear;
-    margin-right: 1px;
+	transition: background-color 0.4s ease, fill 0.4s ease-in-out;
+    margin-right: 1;
 
     &.angle {
         transform: rotate(-45deg);
     }
 
     &.color {
-        background-color: #0582ca;
-        & i {
-			color: $base-light;
-		}
+        background-color: #96a064;
     }
 
     &.color-2 {
-        background-color: #ffc300;
-        &:hover{
-
-            & i {
-                color: $base-dark;
-            }
-        }
+        background-color: #77a6b6;
     }
 
     &.color-3 {
-        background-color: #4c956c;
-        & i {
-			color: $base-light;
-		}
+        background-color: #d1b15f;
+    }
+
+    &.right {
+        margin-right: 3.5px;
     }
 
 	i {
@@ -54,6 +49,8 @@ $border: 2px solid $base-light;
 		color: $base-dark;
 	}
 }
+
+
 
 @keyframes moveRight{
 	50%{
@@ -70,6 +67,7 @@ $border: 2px solid $base-light;
 }
 
 .nav-hover {
+    transition: background-color 0.4s ease-in-out;
     cursor: pointer;
     &:hover {
         background-color: $base-light !important;
@@ -82,6 +80,59 @@ $border: 2px solid $base-light;
                 color: $base-light;
                 animation-name: moveRight;
             }
+        }
+    }
+}
+
+
+.hero-hover {
+    transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
+
+    .arrow {
+        background-color: rgba(250,250,250,0.30);
+        backdrop-filter: blur(5px);
+        i {
+            color: $base-light;
+        }
+    }
+    &:hover {
+            background-color: $base-light;
+            color: $base-light-gray;;
+        .arrow {
+                background-color: $base-light-gray;
+            i {
+                animation-duration: 0.4s;
+                animation-timing-function: ease-in;
+                color: $base-light;
+                animation-name: moveRight;
+            }
+        }
+    }
+}
+
+.block-hover {
+    transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        .block-bubble {
+            background-color: $base-dark;
+            .color-1 { color: $accent-green !important; }
+            .color-2 { color: $accent-blue !important; }
+            .color-3 { color: $accent-yellow !important; }
+        }
+        .arrow {
+                background-color: $base-dark;
+            i {
+                animation-duration: 0.4s;
+                animation-timing-function: ease-in;
+                color: $base-light;
+                animation-name: moveRight;
+            }
+        }
+
+        img {
+            transform: scale(1.05);
         }
     }
 }
