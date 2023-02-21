@@ -10,11 +10,10 @@
     src: url(/Font-TeX/texgyreheros-bold.otf);
 }
 
-$base-dark: #1a1a1a;
+$base-dark: #0f0f0f;
 $base-light: #e8e8e8;
-$base-gray: #2b2b2b;
-$accent-heather: #858377;
-$accent-linen: #E1DACF;
+$base-gray: #222;
+$base-light-gray: #585858;
 
 $border: 2px solid $base-light;
 
@@ -36,7 +35,7 @@ body {
     left: 0;
     height: 4rem;
     width: 100%;
-    padding: 25px;
+    padding: 20px;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -106,6 +105,132 @@ body {
                     }
                 }
             } 
+        }
+    }
+}
+
+#Home {
+    margin-top: 80px;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(550px, 1fr));
+    .home-hero {
+        border-radius: 24px;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        line-height: 120px;
+        letter-spacing: -5px;
+        span {
+            font-size: calc(120px + 1.5vw);
+            font-weight: bold;
+        }
+        .hero-text-one {
+            text-align: left;
+            color: $base-light-gray;
+            animation-delay: 0.5s;
+            transition: color .3s ease-in-out;
+            &:hover {
+                color: $base-light;
+            }
+        }
+        .hero-text-two {
+            text-align: left;
+            margin-left: 98px;
+            color: $base-light-gray;
+            animation-delay: 1s;
+            transition: color .3s ease-in-out;
+            &:hover {
+                color: $base-light;
+            }
+        }
+        .hero-text-three {
+            text-align: right;
+            animation-delay: 1.5s;
+            color: $base-light-gray;
+            transition: color .3s ease-in-out;
+            &:hover {
+                color: $base-light;
+            }
+        }
+        .hero-text-four {
+            text-align: right;
+            color: $base-light-gray;
+            animation-delay: 2s;
+            transition: color .3s ease-in-out;
+            &:hover {
+                color: $base-light;
+            }
+        }
+
+
+        .hero-text-one,
+        .hero-text-two,
+        .hero-text-three,
+        .hero-text-four {
+            opacity: 0;
+            transform: translateY(50%);
+            animation-name: popIn;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+        @keyframes popIn {
+            from {
+              opacity: 0;
+              transform: translateY(50%);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0%);
+            }
+        }
+    }
+}
+
+#Portfolio {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    font-size: 18px;
+
+    .bubble-wrapper {
+        border: $border;
+        border-radius: 110px;
+        padding: 3px;
+        width: 100%;
+    }
+
+    .portfolio-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 0.5rem;
+        .portfolio-bubble {
+            width: 100%;
+            border-radius: 110px;
+            border: $border;
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .portfolio-title {
+                padding: 0.5rem 0.5rem 0.6rem 0.5rem;
+            }
+            .lni {
+                font-size: 20px;
+                padding: 0.5rem;
+            }
         }
     }
 }
