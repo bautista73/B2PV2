@@ -1,13 +1,5 @@
 @import url(/styles/arrow.css);
-@font-face {
-  font-family: "Texgyreheros";
-  src: url(/Font-TeX/texgyreheros-regular.otf);
-}
-@font-face {
-  font-family: "Texgyreheros";
-  font-weight: bold;
-  src: url(/Font-TeX/texgyreheros-bold.otf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
   padding: 0;
@@ -15,7 +7,7 @@
 }
 
 body {
-  font-family: "Texgyreheros", sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #0f0f0f;
   color: #e8e8e8;
 }
@@ -97,116 +89,87 @@ body {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(550px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
 }
 #Home .home-hero {
   border-radius: 24px;
-  padding: 20px;
+  padding: 50px;
   width: 100%;
   height: 100%;
+  background-color: #6e8c90;
   display: flex;
   flex-direction: column;
-  line-height: 120px;
-  letter-spacing: -5px;
+  justify-content: flex-end;
 }
-#Home .home-hero span {
-  font-size: calc(120px + 1.5vw);
-  font-weight: bold;
-}
-#Home .home-hero .hero-text-one {
-  text-align: left;
-  color: #585858;
-  animation-delay: 0.5s;
-  transition: color 0.3s ease-in-out;
-}
-#Home .home-hero .hero-text-one:hover {
-  color: #e8e8e8;
-}
-#Home .home-hero .hero-text-two {
-  text-align: left;
-  margin-left: 98px;
-  color: #585858;
-  animation-delay: 1s;
-  transition: color 0.3s ease-in-out;
-}
-#Home .home-hero .hero-text-two:hover {
-  color: #e8e8e8;
-}
-#Home .home-hero .hero-text-three {
-  text-align: right;
-  animation-delay: 1.5s;
-  color: #585858;
-  transition: color 0.3s ease-in-out;
-}
-#Home .home-hero .hero-text-three:hover {
-  color: #e8e8e8;
-}
-#Home .home-hero .hero-text-four {
-  text-align: right;
-  color: #585858;
-  animation-delay: 2s;
-  transition: color 0.3s ease-in-out;
-}
-#Home .home-hero .hero-text-four:hover {
-  color: #e8e8e8;
-}
-#Home .home-hero .hero-text-one,
-#Home .home-hero .hero-text-two,
-#Home .home-hero .hero-text-three,
-#Home .home-hero .hero-text-four {
-  opacity: 0;
-  transform: translateY(50%);
-  animation-name: popIn;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-@keyframes popIn {
-  from {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-#Portfolio {
-  position: relative;
-  width: 100%;
-  padding: 20px;
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  font-size: 18px;
-}
-#Portfolio .bubble-wrapper {
-  border: 2px solid #e8e8e8;
-  border-radius: 110px;
-  padding: 3px;
-  width: 100%;
-}
-#Portfolio .portfolio-wrapper {
-  width: 100%;
+#Home .home-hero .hero-top {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 0.5rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
 }
-#Portfolio .portfolio-wrapper .portfolio-bubble {
-  width: 100%;
+#Home .home-hero .hero-top .hero-name-wrapper {
+  display: flex;
+  align-items: center;
+}
+#Home .home-hero .hero-top .hero-name-wrapper .hero-name {
+  font-size: calc(100px + 1.5vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: -8px;
+  margin-left: -8px;
+}
+#Home .home-hero .hero-top .hero-name-wrapper hr {
+  margin-top: 0.6rem;
+  margin-left: 2rem;
+  height: 0.6rem;
+  width: 7rem;
+  border: none;
+  background-color: #e8e8e8;
+}
+#Home .home-hero .hero-top .hero-img {
+  max-width: 10.5rem;
+  height: auto;
+}
+#Home .home-hero .hero-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+#Home .home-hero .hero-bottom .hero-bubble {
   border-radius: 110px;
   border: 2px solid #e8e8e8;
-  padding: 3px;
+  padding: 2px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#Portfolio .portfolio-wrapper .portfolio-bubble .portfolio-title {
-  padding: 0.5rem 0.5rem 0.6rem 0.5rem;
-}
-#Portfolio .portfolio-wrapper .portfolio-bubble .lni {
-  font-size: 20px;
+#Home .home-hero .hero-bottom .hero-bubble .hero-title {
   padding: 0.5rem;
+}
+#Home .home-hero .hero-bottom .b-left-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#Home .home-hero .hero-bottom .b-left-wrapper .hero-dev {
+  width: 300px;
+}
+#Home .home-hero .hero-bottom .b-left-wrapper .hero-sub-title {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#Home .home-hero .hero-bottom .b-left-wrapper .hero-sub-title hr {
+  width: 1rem;
+  height: 0.1rem;
+}
+#Home .home-hero .hero-bottom .b-right-wrapper .hero-dev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
 }/*# sourceMappingURL=index.css.map */
