@@ -55,8 +55,8 @@ function contactTab() {
   document.getElementById('contactOpen').click();
 }
 
-//  document.getElementById("defaultOpen").click();// change this
-document.getElementById("portfolioOpen").click();
+document.getElementById("defaultOpen").click();// change this
+// document.getElementById("portfolioOpen").click();
 
 
 
