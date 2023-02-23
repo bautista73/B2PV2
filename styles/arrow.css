@@ -15,13 +15,13 @@
   transform: rotate(-45deg);
 }
 .arrow.color {
-  background-color: #96a064;
+  background-color: #e2e8ce;
 }
 .arrow.color-2 {
-  background-color: #77a6b6;
+  background-color: #a3b18a;
 }
 .arrow.color-3 {
-  background-color: #d1b15f;
+  background-color: #96a064;
 }
 .arrow.right {
   margin-right: 3.5px;

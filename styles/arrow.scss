@@ -7,6 +7,10 @@ $accent-green: #96a064;
 $accent-blue: #77a6b6;
 $accent-yellow: #d1b15f;
 
+$accent-one: #e2e8ce;
+$accent-two: #a3b18a;
+$accent-three: #96a064;
+
 $border: 2px solid $base-light;
 
 .arrow {
@@ -27,15 +31,15 @@ $border: 2px solid $base-light;
     }
 
     &.color {
-        background-color: #96a064;
+        background-color: $accent-one;
     }
 
     &.color-2 {
-        background-color: #77a6b6;
+        background-color: $accent-two;
     }
 
     &.color-3 {
-        background-color: #d1b15f;
+        background-color: $accent-three;
     }
 
     &.right {
