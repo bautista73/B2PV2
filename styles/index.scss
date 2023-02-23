@@ -80,7 +80,8 @@ body {
                 align-items: center;
                 justify-content: space-between;
                 .nav-title {
-                    font-size: $font-size-s;
+                    letter-spacing: -0.5px;
+                    font-weight: 500;
                     padding: $padding-s;
                 }
             }
@@ -825,7 +826,7 @@ body {
                 }
             }
             .middle-blockOne {
-                background-color: $accent-one;
+                background-color: $accent-two;
                 border-radius: 0 24px 24px 24px;
                 display: flex;
                 flex-direction: column;
@@ -870,7 +871,7 @@ body {
                 }
             }
             .middle-blockTwo {
-                background-color: $accent-two;
+                background-color: $accent-three;
                 border-radius: 24px 24px 24px 0;
                 display: flex;
                 flex-direction: column;
@@ -905,7 +906,7 @@ body {
                 }
             }
             .middle-blockThree {
-                background-color: $accent-three;
+                background-color: $accent-one;
                 border-radius: 24px 24px 0 24px;
                 display: flex;
                 flex-direction: column;
@@ -988,8 +989,8 @@ body {
                 }
             }
             .lower-blockOne {
-                width: 40%;
-                background-color: $accent-one;
+                width: 30%;
+                background-color: $accent-three;
                 border-radius: 0 24px 24px 24px;
                 display: flex;
                 flex-direction: column;
@@ -1035,7 +1036,7 @@ body {
             }
             .lower-blockTwo {
                 width: 30%;
-                background-color: $accent-two;
+                background-color: $accent-one;
                 border-radius: 24px 24px 24px 0;
                 display: flex;
                 flex-direction: column;
@@ -1070,8 +1071,8 @@ body {
                 }
             }
             .lower-blockThree {
-                width: 30%;
-                background-color: $accent-three;
+                width: 60%;
+                background-color: $accent-two;
                 border-radius: 24px 24px 0 24px;
                 display: flex;
                 flex-direction: column;
@@ -1119,6 +1120,7 @@ body {
     grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
     padding: 0 20px;
     .footer-wrapper {
+        position: relative;
         height: 100%;
         width: 100%;
         hr {
@@ -1134,6 +1136,15 @@ body {
             text-transform: uppercase;
             font-size: 14px;
             letter-spacing: -0.5px;
+            .tabnum {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+            }
+            .span-name {
+                position: absolute;
+                left: 45.7%;
+            }
             .las {
                 font-size: 14px;
             }

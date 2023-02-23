@@ -15,7 +15,7 @@
             <div class="nav-wrapper">
                 <div class="nav">
                     <div class="nav-left bubble-wrapper">
-                        <div class="nav-bubble nav-hover">
+                        <div id="defaultOpen" class="nav-bubble nav-hover tablinks" onclick="openTab(event, 'Home')">
                             <span class="nav-title">Home</span>
                             <div class="arrow right">
                                 <i class="las la-arrow-right"></i>
@@ -23,20 +23,20 @@
                         </div>
                     </div>
                     <div class="nav-middle bubble-wrapper">
-                        <div class="nav-bubble nav-banner nav-hover">
+                        <div id="portfolioOpen" class="nav-bubble nav-banner nav-hover tablinks" onclick="openTab(event, 'Portfolio')">
                             <span class="nav-title">Portfolio</span>
                             <div class="arrow right color">
                                 <i class="las la-arrow-right"></i>
                             </div>
                         </div>
-                        <div class="nav-bubble nav-about nav-hover">
+                        <div id="aboutOpen" class="nav-bubble nav-about nav-hover tablinks" onclick="openTab(event, 'About')">
                             <span class="nav-title">About</span>
                             <div class="arrow right color-2">
                                 <i class="las la-arrow-right"></i>
                             </div>
                         </div>
-                        <div class="nav-bubble nav-contact nav-hover">
-                            <span class="nav-title">Contact</span>
+                        <div id="contactOpen" class="nav-bubble nav-contact nav-hover  tablinks" onclick="openTab(event, 'Contact')">
+                            <span class="nav-title" >Contact</span>
                             <div class="arrow right color-3">
                                 <i class="las la-arrow-right"></i>
                             </div>
@@ -55,7 +55,7 @@
         </nav>
     </header>
     <main>
-        <article id="Home">
+        <article id="Home" class="tabcontent">
             <section id="home-top">
                 <div class="home-top-wrapper">
                     <!--top-block-one-->
@@ -233,7 +233,7 @@
                 </div>
             </section>
         </article>
-        <article id="Portfolio">
+        <article id="Portfolio" class="tabcontent">
             <section id="portfolio-top">
                 <div class="portfolio-top-wrapper">
                     <!--top-block-one-->
@@ -244,7 +244,7 @@
                             </div>
                             <hr />
                             <div class="blockOne-text">
-                                <span>All developments found on GitHub <i class="las la-asterisk"></i> Dribbble <i class="las la-asterisk"></i> Behance </span>
+                                <span>More developments found on GitHub <i class="las la-asterisk"></i> Dribbble <i class="las la-asterisk"></i> Behance </span>
                             </div>
                         </div>
                     </div>
@@ -295,7 +295,7 @@
                     <div class="middle-blockOne middle-block block-hover">
                         <div class="block-header">
                             <div class="block-bubble">
-                                <span class="block-title color-1">Website</span>
+                                <span class="block-title color-2">Website</span>
                             </div>
                             <div class="arrow">
                                 <i class="las la-arrow-right"></i>
@@ -318,19 +318,19 @@
                     <div class="middle-blockTwo middle-block block-hover">
                         <div class="block-header">
                             <div class="block-bubble">
-                                <span class="block-title color-2">Application</span> 
+                                <span class="block-title color-3">Application</span> 
                             </div>
-                            <div class="arrow angle">
+                            <div class="arrow">
                                 <i class="las la-arrow-right"></i>
                             </div>
                         </div>
                         <div class="block-body">
                             <div class="blockTwo-title">
-                                <span>View More Designs On Dribbble</span>
+                                <span>NexusMD</span>
                             </div>
                             <hr />
                             <div class="blockTwo-text">
-                                <span>New ideas and concepts added frequently</span>
+                                <span>A native patient managment app for medical practices</span>
                             </div>
                         </div>
                     </div>
@@ -338,7 +338,7 @@
                     <div class="middle-blockThree middle-block block-hover">
                         <div class="block-header">
                             <div class="block-bubble">
-                                <span class="block-title color-3">API</span>
+                                <span class="block-title color-1">API</span>
                             </div>
                             <div class="arrow">
                                 <i class="las la-arrow-right"></i>
@@ -346,11 +346,11 @@
                         </div>
                         <div class="block-body">
                             <div class="blockThree-title">
-                                <span>Let's Talk, Send Me A Message</span>
+                                <span>DisplayMe</span>
                             </div>
                             <hr />
                             <div class="blockThree-text">
-                                <span>Open to collaborations and work opportunities</span>
+                                <span>A web scraper finding new monitors on the market</span>
                             </div>
                         </div>
                     </div>
@@ -362,7 +362,7 @@
                     <div class="lower-blockOne lower-block block-hover">
                         <div class="block-header">
                             <div class="block-bubble">
-                                <span class="block-title color-1">Design</span>
+                                <span class="block-title color-3">Design</span>
                             </div>
                             <div class="arrow">
                                 <i class="las la-arrow-right"></i>
@@ -373,11 +373,11 @@
                                 <img src="/images/ElmersExpress.png" alt="Elmer's Express">
                             </div>
                             <div class="blockOne-title">
-                                <span>Elmer's Express</span>
+                                <span>Contempo Design</span>
                             </div>
                             <hr />
                             <div class="blockOne-text">
-                                <span>Website redesign for Seattle based moving company</span>
+                                <span>My personal take on design processes</span>
                             </div>
                         </div>
                     </div>
@@ -385,19 +385,19 @@
                     <div class="lower-blockTwo lower-block block-hover">
                         <div class="block-header">
                             <div class="block-bubble">
-                                <span class="block-title color-2">Website</span> 
+                                <span class="block-title color-1">Website</span> 
                             </div>
-                            <div class="arrow angle">
+                            <div class="arrow">
                                 <i class="las la-arrow-right"></i>
                             </div>
                         </div>
                         <div class="block-body">
                             <div class="blockTwo-title">
-                                <span>View More Designs On Dribbble</span>
+                                <span>Desk & Club</span>
                             </div>
                             <hr />
                             <div class="blockTwo-text">
-                                <span>New ideas and concepts added frequently</span>
+                                <span>A minimalist blog for desk setup enthusiasts</span>
                             </div>
                         </div>
                     </div>
@@ -405,7 +405,7 @@
                     <div class="lower-blockThree lower-block block-hover">
                         <div class="block-header">
                             <div class="block-bubble">
-                                <span class="block-title color-3">Application</span>
+                                <span class="block-title color-2">Application</span>
                             </div>
                             <div class="arrow">
                                 <i class="las la-arrow-right"></i>
@@ -413,11 +413,11 @@
                         </div>
                         <div class="block-body">
                             <div class="blockThree-title">
-                                <span>Let's Talk, Send Me A Message</span>
+                                <span>Liftify</span>
                             </div>
                             <hr />
                             <div class="blockThree-text">
-                                <span>Open to collaborations and work opportunities</span>
+                                <span>A minimalist approach to fitness tracking on iOS (currently a work in progress)</span>
                             </div>
                         </div>
                     </div>
@@ -425,7 +425,10 @@
                 </div>
             </section>
         </article>
-        <article id="About">
+        <article id="About" class="tabcontent">
+
+        </article>
+        <article id="Contact" class="tabcontent">
 
         </article>
     </main>
@@ -434,8 +437,11 @@
             <div class="footer-wrapper">
                 <hr />
                 <div class="footer-span-wrapper">
-                    <span>01</span>
-                    <span>Brandon Bautista <i class="las la-asterisk"></i> B<sup>2</sup></span>
+                    <span id="homeTabNum" class="tabnum">01 <i class="las la-asterisk"></i> HOME</span>
+                    <span id="portfolioTabNum" class="tabnum">02 <i class="las la-asterisk"></i> PORTFOLIO</span>
+                    <span id="aboutTabNum" class="tabnum">03 <i class="las la-asterisk"></i> ABOUT</span>
+                    <span id="contactTabNum" class="tabnum">04 <i class="las la-asterisk"></i> CONTACT</span>
+                    <span class="span-name">Brandon Bautista <i class="las la-asterisk"></i> B<sup>2</sup></span>
                     <span>Portfolio 2023</span>
                 </div>
             </div>
