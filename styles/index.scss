@@ -15,6 +15,7 @@ $accent-one: #e2e8ce;
 $accent-two: #a3b18a;
 $accent-three: #96a064;
 
+$font-size-xxl: 64px;
 $font-size-l: 24px;
 $font-size-m: 20px;
 $font-size-s: 16px;
@@ -106,7 +107,7 @@ body {
                     li {
                        
                         .lni {
-                            font-size: 25px;
+                            font-size: 24px;
                             padding: 13px;
                             border-radius: 50%;
                             border: $border;
@@ -144,15 +145,14 @@ body {
             height: 100%;
             width: 100%;
             gap: $gap-l;
-
+            
             .top-block {
-                width: 100%;
                 padding: $padding-l;
                 .block-header {
                     width: 100%;
-                    margin: auto;
-                    padding-bottom: 15px;
+                    margin: 0 auto;
                     display: flex;
+                    align-items: center;
                     justify-content: space-between;
                     .block-bubble {
                         border-radius: 110px;
@@ -164,7 +164,7 @@ body {
                         transition: backdrop-filter 0.4s ease, fill 0.4s linear;
                         .block-title {
                             font-size: $font-size-s;
-                            padding: 0.5rem;
+                            padding: $padding-s;
                             text-transform: uppercase;
                             letter-spacing: -0.5px;
                             font-weight: 600;
@@ -177,13 +177,19 @@ body {
                 }
             }
             .top-blockOne {
+                width: 60%;
                 background-color: $accent-one;
                 border-radius: 0 24px 24px 24px; 
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
                 .block-body {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    width: 100%;
                     .overflow {
                         overflow: hidden;
                         width: 100%;
@@ -199,7 +205,7 @@ body {
                         align-items: center;
                         justify-content: space-between;
                         width: 100%;
-                        font-size: $font-size-s;
+                        font-size: $font-size-m;
                         font-weight: 600;
                         letter-spacing: -0.5px;
                         padding: 0.5rem 0;
@@ -213,23 +219,38 @@ body {
                     }
                     .blockOne-text {
                         padding-top: 0.5rem;
-                        font-size: $font-size-s;
-                        color: $base-dark;
+                        line-height: 24px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        span {
+                            font-size: $font-size-s;
+                            color: $base-dark;
+                        }
                     }
                    
                 }
             }
             .top-blockTwo {
-                
+                width: 40%;
                 background-color: $accent-two;
-                border-radius: 24px;
-                
+                border-radius: 24px 24px 24px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                .block-body {
+                    font-size: $font-size-xxl;
+                    letter-spacing: -5px;
+                    color: $base-dark;
+                }
             }
-            .top-blockThree {
+            // .top-blockThree {
                 
-                background-color: $accent-three;
-                border-radius: 24px 24px 0 24px;
-            }
+            //     background-color: $accent-three;
+            //     border-radius: 24px 24px 0 24px;
+            // }
         }
     }
 

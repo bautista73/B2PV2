@@ -72,7 +72,7 @@ body {
   gap: 4px;
 }
 #Navigation .nav-wrapper .nav .nav-right ul li .lni {
-  font-size: 25px;
+  font-size: 24px;
   padding: 13px;
   border-radius: 50%;
   border: 2.2px solid #f3f3f3;
@@ -107,14 +107,13 @@ body {
   gap: 18px;
 }
 #Home #home-top .home-top-wrapper .top-block {
-  width: 100%;
   padding: 18px;
 }
 #Home #home-top .home-top-wrapper .top-block .block-header {
   width: 100%;
-  margin: auto;
-  padding-bottom: 15px;
+  margin: 0 auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 #Home #home-top .home-top-wrapper .top-block .block-header .block-bubble {
@@ -130,7 +129,7 @@ body {
 }
 #Home #home-top .home-top-wrapper .top-block .block-header .block-bubble .block-title {
   font-size: 16px;
-  padding: 0.5rem;
+  padding: 4px;
   text-transform: uppercase;
   letter-spacing: -0.5px;
   font-weight: 600;
@@ -146,14 +145,20 @@ body {
   color: #0f0f0f;
 }
 #Home #home-top .home-top-wrapper .top-blockOne {
+  width: 60%;
   background-color: #e2e8ce;
   border-radius: 0 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 #Home #home-top .home-top-wrapper .top-blockOne .block-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 #Home #home-top .home-top-wrapper .top-blockOne .block-body .overflow {
   overflow: hidden;
@@ -170,7 +175,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.5px;
   padding: 0.5rem 0;
@@ -184,16 +189,29 @@ body {
 }
 #Home #home-top .home-top-wrapper .top-blockOne .block-body .blockOne-text {
   padding-top: 0.5rem;
+  line-height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#Home #home-top .home-top-wrapper .top-blockOne .block-body .blockOne-text span {
   font-size: 16px;
   color: #0f0f0f;
 }
 #Home #home-top .home-top-wrapper .top-blockTwo {
+  width: 40%;
   background-color: #a3b18a;
-  border-radius: 24px;
+  border-radius: 24px 24px 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-#Home #home-top .home-top-wrapper .top-blockThree {
-  background-color: #96a064;
-  border-radius: 24px 24px 0 24px;
+#Home #home-top .home-top-wrapper .top-blockTwo .block-body {
+  font-size: 64px;
+  letter-spacing: -5px;
+  color: #0f0f0f;
 }
 #Home #home-middle {
   padding: 0 18px 18px 20px;

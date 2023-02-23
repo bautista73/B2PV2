@@ -89,41 +89,46 @@ $border: 2px solid $base-light;
 }
 
 
-.hero-hover {
-    transition: background-color 0.4s ease-in-out;
-    cursor: pointer;
+// .hero-hover {
+//     transition: background-color 0.4s ease-in-out;
+//     cursor: pointer;
 
-    .arrow {
-        background-color: rgba(250,250,250,0.30);
-        backdrop-filter: blur(5px);
-        i {
-            color: $base-light;
-        }
-    }
-    &:hover {
-            background-color: $base-light;
-            color: $base-light-gray;;
-        .arrow {
-                background-color: $base-light-gray;
-            i {
-                animation-duration: 0.4s;
-                animation-timing-function: ease-in;
-                color: $base-light;
-                animation-name: moveRight;
-            }
-        }
-    }
-}
+//     .arrow {
+//         background-color: rgba(250,250,250,0.30);
+//         backdrop-filter: blur(5px);
+//         i {
+//             color: $base-light;
+//         }
+//     }
+//     &:hover {
+//             background-color: $base-light;
+//             color: $base-light-gray;;
+//         .arrow {
+//                 background-color: $base-light-gray;
+//             i {
+//                 animation-duration: 0.4s;
+//                 animation-timing-function: ease-in;
+//                 color: $base-light;
+//                 animation-name: moveRight;
+//             }
+//         }
+//     }
+// }
 
 .block-hover {
     transition: background-color 0.4s ease-in-out;
     cursor: pointer;
+
+    .arrow {
+        background-color: rgba(250,250,250,0.40);
+        backdrop-filter: blur(5px);
+    }
     &:hover {
         .block-bubble {
             background-color: $base-dark;
-            .color-1 { color: $accent-green !important; }
-            .color-2 { color: $accent-blue !important; }
-            .color-3 { color: $accent-yellow !important; }
+            .color-1 { color: $accent-one !important; }
+            .color-2 { color: $accent-two !important; }
+            .color-3 { color: $accent-three !important; }
         }
         .arrow {
                 background-color: $base-dark;
