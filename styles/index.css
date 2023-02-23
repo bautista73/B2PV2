@@ -71,15 +71,15 @@ body {
   list-style: none;
   gap: 4px;
 }
-#Navigation .nav-wrapper .nav .nav-right ul li .lni {
-  font-size: 24px;
+#Navigation .nav-wrapper .nav .nav-right ul li .lab {
+  font-size: 28px;
   padding: 13px;
   border-radius: 50%;
   border: 2.2px solid #f3f3f3;
   background-color: #0f0f0f;
   transition: all 0.25s ease-in-out;
 }
-#Navigation .nav-wrapper .nav .nav-right ul li .lni:hover {
+#Navigation .nav-wrapper .nav .nav-right ul li .lab:hover {
   color: #0f0f0f;
   background-color: #f3f3f3;
 }
@@ -146,7 +146,7 @@ body {
 }
 #Home #home-top .home-top-wrapper .top-blockOne {
   width: 60%;
-  background-color: #c2c5aa;
+  background-color: #e0e1e3;
   border-radius: 0 24px 24px 24px;
   display: flex;
   flex-direction: column;
@@ -199,7 +199,7 @@ body {
 }
 #Home #home-top .home-top-wrapper .top-blockTwo {
   width: 40%;
-  background-color: #b6ad90;
+  background-color: #aeb7b3;
   border-radius: 24px 24px 24px 0;
   display: flex;
   flex-direction: column;
@@ -288,7 +288,7 @@ body {
   color: #0f0f0f;
 }
 #Home #home-middle .home-middle-wrapper .middle-blockOne {
-  background-color: #b6ad90;
+  background-color: #aeb7b3;
   border-radius: 24px 24px 24px 0;
   width: 30%;
   display: flex;
@@ -328,7 +328,7 @@ body {
 }
 #Home #home-middle .home-middle-wrapper .middle-blockTwo {
   width: 30%;
-  background-color: #a4ac86;
+  background-color: #c2b299;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -364,7 +364,7 @@ body {
 }
 #Home #home-middle .home-middle-wrapper .middle-blockThree {
   width: 60%;
-  background-color: #c2c5aa;
+  background-color: #e0e1e3;
   border-radius: 0 24px 24px 24px;
   display: flex;
   flex-direction: column;
@@ -447,7 +447,7 @@ body {
   color: #0f0f0f;
 }
 #Home #home-lower .home-lower-wrapper .lower-blockOne {
-  background-color: #c2c5aa;
+  background-color: #e0e1e3;
   border-radius: 0 24px 24px 24px;
   display: flex;
   flex-direction: column;
@@ -492,7 +492,7 @@ body {
   font-weight: normal;
 }
 #Home #home-lower .home-lower-wrapper .lower-blockTwo {
-  background-color: #b6ad90;
+  background-color: #aeb7b3;
   border-radius: 24px 24px 24px 0;
   display: flex;
   flex-direction: column;
@@ -527,7 +527,7 @@ body {
   font-weight: normal;
 }
 #Home #home-lower .home-lower-wrapper .lower-blockThree {
-  background-color: #a4ac86;
+  background-color: #c2b299;
   border-radius: 24px 24px 0 24px;
   display: flex;
   flex-direction: column;
@@ -563,6 +563,8 @@ body {
 }
 
 #Footer {
+  max-width: 1920px;
+  margin: auto;
   width: 100%;
   display: grid;
   align-items: center;

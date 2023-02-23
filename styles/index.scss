@@ -11,9 +11,9 @@ $accent-green: #96a064;
 $accent-blue: #77a6b6;
 $accent-yellow: #d1b15f;
 
-$accent-one: #c2c5aa;
-$accent-two: #b6ad90;
-$accent-three: #a4ac86;
+$accent-one: #e0e1e3;
+$accent-two: #aeb7b3;
+$accent-three: #c2b299;
 
 $font-size-xl: 64px;
 $font-size-l: 32px;
@@ -54,7 +54,7 @@ body {
     margin: auto;
 
     .nav-wrapper {
-    
+
         .nav {
             display: flex;
             align-items: center;
@@ -106,8 +106,8 @@ body {
                     gap: $gap-s;
                     li {
                        
-                        .lni {
-                            font-size: 24px;
+                        .lab {
+                            font-size: 28px;
                             padding: 13px;
                             border-radius: 50%;
                             border: $border;
@@ -594,6 +594,8 @@ body {
 }
 
 #Footer {
+    max-width: 1920px;
+    margin: auto;
     width: 100%;
     display: grid;
     align-items: center;

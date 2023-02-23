@@ -15,13 +15,13 @@
   transform: rotate(-45deg);
 }
 .arrow.color {
-  background-color: #c2c5aa;
+  background-color: #e0e1e3;
 }
 .arrow.color-2 {
-  background-color: #b6ad90;
+  background-color: #aeb7b3;
 }
 .arrow.color-3 {
-  background-color: #a4ac86;
+  background-color: #c2b299;
 }
 .arrow.right {
   margin-right: 3.5px;
@@ -77,13 +77,13 @@
   background-color: #0f0f0f;
 }
 .block-hover:hover .block-bubble .color-1 {
-  color: #c2c5aa !important;
+  color: #e0e1e3 !important;
 }
 .block-hover:hover .block-bubble .color-2 {
-  color: #b6ad90 !important;
+  color: #aeb7b3 !important;
 }
 .block-hover:hover .block-bubble .color-3 {
-  color: #a4ac86 !important;
+  color: #c2b299 !important;
 }
 .block-hover:hover .arrow {
   background-color: #0f0f0f;
