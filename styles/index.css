@@ -562,6 +562,538 @@ body {
   font-weight: normal;
 }
 
+#Portfolio {
+  margin-top: 80px;
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+}
+#Portfolio #portfolio-top {
+  padding: 0 18px 18px 20px;
+  position: relative;
+  width: inherit;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 250px));
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  gap: 18px;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-block {
+  padding: 18px;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-block .block-header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-block .block-header .block-bubble {
+  border-radius: 110px;
+  border: 2.4px solid #0f0f0f;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: fill 0.4s linear, -webkit-backdrop-filter 0.4s ease;
+  transition: backdrop-filter 0.4s ease, fill 0.4s linear;
+  transition: backdrop-filter 0.4s ease, fill 0.4s linear, -webkit-backdrop-filter 0.4s ease;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-block .block-header .block-bubble .block-title {
+  font-size: 16px;
+  padding: 4px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  transition: color 0.4s ease-in-out;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-block .block-header .block-bubble .block-title.color-1 {
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-block .block-header .block-bubble .block-title.color-2 {
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-block .block-header .block-bubble .block-title.color-3 {
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockOne {
+  width: 60%;
+  background-color: #e0e1e3;
+  border-radius: 0 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  pointer-events: none;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockOne .block-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockOne .block-body .overflow {
+  overflow: hidden;
+  width: 100%;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockOne .block-body .overflow img {
+  max-width: 100%;
+  min-width: 200px;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockOne .block-body .blockOne-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  padding: 0.5rem 0;
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockOne .block-body hr {
+  height: 3px;
+  width: 100%;
+  background-color: #0f0f0f;
+  border: none;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockOne .block-body .blockOne-text {
+  padding-top: 0.5rem;
+  line-height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockTwo {
+  width: 30%;
+  background-color: #aeb7b3;
+  border-radius: 24px 24px 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockTwo .block-body {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockTwo .block-body .blockOne-title {
+  padding: 0.5rem 0;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockTwo .block-body hr {
+  height: 3px;
+  width: 100%;
+  background-color: #0f0f0f;
+  border: none;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockTwo .block-body .blockOne-text {
+  padding-top: 0.5rem;
+  line-height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  color: #0f0f0f;
+  font-weight: normal;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockTwo .block-body .blockOne-text .las {
+  font-size: 14px;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockThree {
+  width: 30%;
+  background-color: #c2b299;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 24px 24px 0 24px;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockThree .block-body {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockThree .block-body .blockTwo-title {
+  padding: 0.5rem 0;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockThree .block-body hr {
+  height: 3px;
+  width: 100%;
+  background-color: #0f0f0f;
+  border: none;
+}
+#Portfolio #portfolio-top .portfolio-top-wrapper .top-blockThree .block-body .blockTwo-text {
+  padding-top: 0.5rem;
+  line-height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  color: #0f0f0f;
+  font-weight: normal;
+}
+#Portfolio #portfolio-middle {
+  padding: 0 18px 18px 20px;
+  position: relative;
+  width: inherit;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 250px));
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  gap: 18px;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-block {
+  width: 100%;
+  padding: 18px;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-block .block-header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-block .block-header .block-bubble {
+  border-radius: 110px;
+  border: 2.4px solid #0f0f0f;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: fill 0.4s linear, -webkit-backdrop-filter 0.4s ease;
+  transition: backdrop-filter 0.4s ease, fill 0.4s linear;
+  transition: backdrop-filter 0.4s ease, fill 0.4s linear, -webkit-backdrop-filter 0.4s ease;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-block .block-header .block-bubble .block-title {
+  font-size: 16px;
+  padding: 4px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  transition: color 0.4s ease-in-out;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-block .block-header .block-bubble .block-title.color-1 {
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-block .block-header .block-bubble .block-title.color-2 {
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-block .block-header .block-bubble .block-title.color-3 {
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockOne {
+  background-color: #e0e1e3;
+  border-radius: 0 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockOne .block-body {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockOne .block-body .overflow {
+  overflow: hidden;
+  width: 100%;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockOne .block-body .overflow img {
+  max-width: 100%;
+  min-width: 200px;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockOne .block-body .blockOne-title {
+  padding: 0.5rem 0;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockOne .block-body hr {
+  height: 3px;
+  width: 100%;
+  background-color: #0f0f0f;
+  border: none;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockOne .block-body .blockOne-text {
+  padding-top: 0.5rem;
+  line-height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  color: #0f0f0f;
+  font-weight: normal;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockTwo {
+  background-color: #aeb7b3;
+  border-radius: 24px 24px 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockTwo .block-body {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockTwo .block-body .blockTwo-title {
+  padding: 0.5rem 0;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockTwo .block-body hr {
+  height: 3px;
+  width: 100%;
+  background-color: #0f0f0f;
+  border: none;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockTwo .block-body .blockTwo-text {
+  padding-top: 0.5rem;
+  line-height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  color: #0f0f0f;
+  font-weight: normal;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockThree {
+  background-color: #c2b299;
+  border-radius: 24px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockThree .block-body {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockThree .block-body .blockThree-title {
+  padding: 0.5rem 0;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockThree .block-body hr {
+  height: 3px;
+  width: 100%;
+  background-color: #0f0f0f;
+  border: none;
+}
+#Portfolio #portfolio-middle .portfolio-middle-wrapper .middle-blockThree .block-body .blockThree-text {
+  padding-top: 0.5rem;
+  line-height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  color: #0f0f0f;
+  font-weight: normal;
+}
+#Portfolio #portfolio-lower {
+  padding: 0 18px 18px 20px;
+  position: relative;
+  width: inherit;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 250px));
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  gap: 18px;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-block {
+  padding: 18px;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-block .block-header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-block .block-header .block-bubble {
+  border-radius: 110px;
+  border: 2.4px solid #0f0f0f;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: fill 0.4s linear, -webkit-backdrop-filter 0.4s ease;
+  transition: backdrop-filter 0.4s ease, fill 0.4s linear;
+  transition: backdrop-filter 0.4s ease, fill 0.4s linear, -webkit-backdrop-filter 0.4s ease;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-block .block-header .block-bubble .block-title {
+  font-size: 16px;
+  padding: 4px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  transition: color 0.4s ease-in-out;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-block .block-header .block-bubble .block-title.color-1 {
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-block .block-header .block-bubble .block-title.color-2 {
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-block .block-header .block-bubble .block-title.color-3 {
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockOne {
+  width: 40%;
+  background-color: #e0e1e3;
+  border-radius: 0 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockOne .block-body {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockOne .block-body .overflow {
+  overflow: hidden;
+  width: 100%;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockOne .block-body .overflow img {
+  max-width: 100%;
+  min-width: 200px;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockOne .block-body .blockOne-title {
+  padding: 0.5rem 0;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockOne .block-body hr {
+  height: 3px;
+  width: 100%;
+  background-color: #0f0f0f;
+  border: none;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockOne .block-body .blockOne-text {
+  padding-top: 0.5rem;
+  line-height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  color: #0f0f0f;
+  font-weight: normal;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockTwo {
+  width: 30%;
+  background-color: #aeb7b3;
+  border-radius: 24px 24px 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockTwo .block-body {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockTwo .block-body .blockTwo-title {
+  padding: 0.5rem 0;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockTwo .block-body hr {
+  height: 3px;
+  width: 100%;
+  background-color: #0f0f0f;
+  border: none;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockTwo .block-body .blockTwo-text {
+  padding-top: 0.5rem;
+  line-height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  color: #0f0f0f;
+  font-weight: normal;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockThree {
+  width: 30%;
+  background-color: #c2b299;
+  border-radius: 24px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockThree .block-body {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #0f0f0f;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockThree .block-body .blockThree-title {
+  padding: 0.5rem 0;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockThree .block-body hr {
+  height: 3px;
+  width: 100%;
+  background-color: #0f0f0f;
+  border: none;
+}
+#Portfolio #portfolio-lower .portfolio-lower-wrapper .lower-blockThree .block-body .blockThree-text {
+  padding-top: 0.5rem;
+  line-height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  color: #0f0f0f;
+  font-weight: normal;
+}
+
 #Footer {
   max-width: 1920px;
   margin: auto;
