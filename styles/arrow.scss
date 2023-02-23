@@ -7,9 +7,13 @@ $accent-green: #96a064;
 $accent-blue: #77a6b6;
 $accent-yellow: #d1b15f;
 
-$accent-one: #e2e8ce;
-$accent-two: #a3b18a;
-$accent-three: #96a064;
+// $accent-one: #e2e8ce;
+// $accent-two: #a3b18a;
+// $accent-three: #96a064;
+
+$accent-one: #c2c5aa;
+$accent-two: #b6ad90;
+$accent-three: #a4ac86;
 
 $border: 2px solid $base-light;
 
@@ -87,33 +91,6 @@ $border: 2px solid $base-light;
         }
     }
 }
-
-
-// .hero-hover {
-//     transition: background-color 0.4s ease-in-out;
-//     cursor: pointer;
-
-//     .arrow {
-//         background-color: rgba(250,250,250,0.30);
-//         backdrop-filter: blur(5px);
-//         i {
-//             color: $base-light;
-//         }
-//     }
-//     &:hover {
-//             background-color: $base-light;
-//             color: $base-light-gray;;
-//         .arrow {
-//                 background-color: $base-light-gray;
-//             i {
-//                 animation-duration: 0.4s;
-//                 animation-timing-function: ease-in;
-//                 color: $base-light;
-//                 animation-name: moveRight;
-//             }
-//         }
-//     }
-// }
 
 .block-hover {
     transition: background-color 0.4s ease-in-out;
