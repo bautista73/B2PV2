@@ -62,11 +62,11 @@ body {
             width: 100%;
             gap: $gap-l;
             
-            .bubble-wrapper {
-                border: $border;
-                border-radius: 110px;
-                padding: $padding-s;
-            }
+            // .bubble-wrapper {
+            //     border: $border;
+            //     border-radius: 110px;
+            //     padding: $padding-s;
+            // }
 
             .nav-left {
                 width: calc(100% / 3);
@@ -109,7 +109,7 @@ body {
                        
                         .lab {
                             font-size: 28px;
-                            padding: 13px;
+                            padding: 8px;
                             border-radius: 50%;
                             border: $border;
                             background-color: $base-dark;
