@@ -10,6 +10,7 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #0f0f0f;
   color: #eaeaea;
+  overflow: hidden;
 }
 
 .hr {
