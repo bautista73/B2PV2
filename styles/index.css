@@ -67,15 +67,31 @@ body {
   align-items: flex-start;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(300px, 800px));
-  background-color: rgba(119, 166, 182, 0.2);
   margin: auto;
 }
+#Home #hero {
+  width: 100%;
+  height: 100%;
+}
 #Home #hero .hero-text {
-  line-height: 90px;
+  width: 100%;
+  height: 100%;
+  line-height: 120px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #Home #hero .hero-text h1 {
-  font-size: 100px;
+  font-size: 120px;
   letter-spacing: -5px;
+}
+#Home #hero .hero-text .hero-left {
+  height: auto;
+}
+#Home #hero .hero-text .hero-right {
+  text-align: right;
+  height: auto;
 }
 
 #Portfolio {
